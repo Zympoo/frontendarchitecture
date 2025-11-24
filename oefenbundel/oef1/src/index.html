@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Warre Neirinck" name="author">
+    <title>p55</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+<div class="container my-4">
+    <div class="card shadow-sm border-warning">
+        <div class="card-header bg-warning text-dark">
+            Oefening 1 – MoodTrackerModule (stemmingen bijhouden)
+        </div>
+        <div class="card-body">
+            <p class="mb-3">
+                Hoe voel je je vandaag? Klik op een knop om je stemming te
+                registreren.
+            </p>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <button id="mood_good" class="btn btn-success">😊 Goed</button>
+                <button id="mood_ok" class="btn btn-secondary">😐 Gaat wel</button>
+                <button id="mood_bad" class="btn btn-danger">😞 Slecht</button>
+            </div>
+            <h6>Historiek</h6>
+            <ul id="mood_list" class="list-group small"></ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

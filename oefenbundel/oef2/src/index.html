@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Warre Neirinck" name="author">
+    <title>p55</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+<div class="container my-4">
+    <div class="card shadow-sm border-primary">
+        <div class="card-header bg-primary text-white">
+            Oefening 2 – StudySessionModule (studiesessies registreren)
+        </div>
+        <div class="card-body">
+            <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                    <label for="study_subject" class="form-label">Vak</label>
+                    <select id="study_subject" class="form-select">
+                        <option value="Frans">Frans</option>
+                        <option value="Wiskunde">Wiskunde</option>
+                        <option value="Informatica">Informatica</option>
+                        <option value="Engels">Engels</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="study_minutes" class="form-label">Minuten
+                        gestudeerd</label>
+                    <input
+                            id="study_minutes"
+                            type="number"
+                            min="1"
+                            class="form-control"
+                            placeholder="Bijvoorbeeld 25"
+                    >
+                </div>
+            </div>
+            <button id="study_add" class="btn btn-primary w-100 mb-3">
+                Voeg studiesessie toe
+            </button>
+            <h6>Historiek</h6>
+            <ul id="study_list" class="list-group small mb-3"></ul>
+            <p class="mb-0">
+                Totaal aantal sessies: <strong><span
+                    id="study_total_sessions">0</span></strong>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

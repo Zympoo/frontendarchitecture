@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Warre Neirinck" name="author">
+    <title>p55</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+<div class="container my-4">
+    <div class="card shadow-sm border-success">
+        <div class="card-header bg-success text-white">
+            Oefening 3 – TravelWishlistModule (reisbestemmingen met prioriteit)
+        </div>
+        <div class="card-body">
+            <p class="mb-3">
+                Voeg bestemmingen toe aan je reis-wishlist met een prioriteit (1 =
+                laag, 5 = hoog).
+            </p>
+            <div class="row g-3 mb-3">
+                <div class="col-md-8">
+                    <label for="travel_destination" class="formlabel">Bestemming</label>
+                    <input
+                            id="travel_destination"
+                            class="form-control"
+                            placeholder="Bijvoorbeeld: Kyoto, IJsland, New York..."
+                    >
+                </div>
+                <div class="col-md-4">
+                    <label for="travel_priority" class="form-label">Prioriteit
+                        (1–5)</label>
+                    <input
+                            id="travel_priority"
+                            type="number"
+                            min="1"
+                            max="5"
+                            class="form-control"
+                            value="3"
+                    >
+                </div>
+            </div>
+            <button id="travel_add" class="btn btn-success w-100 mb-3">
+                Voeg bestemming toe
+            </button>
+            <h6>Wishlist (hoogste prioriteit eerst)</h6>
+            <ul id="travel_list" class="list-group small"></ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
