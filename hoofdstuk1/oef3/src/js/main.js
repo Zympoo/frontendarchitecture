@@ -13,7 +13,6 @@ const ShopApp = (function(){
         const product = input.value.trim();
 
         if(!isValidInput(product)){
-            alert('Please enter valid input')
             return;
         }
 
@@ -31,12 +30,10 @@ const ShopApp = (function(){
     }
 
     function renderList(){
-        let html = "";
-        for (let i = 0; i < products.length; i++) {
-            html += "<li class='list-group-item'>" + products[i] + "</li>";
-        }
+        const list = document.getElementById('shop_list');
 
-        document.getElementById('shop_list').innerHTML = html;
+        list.innerHTML = products.map(p => `<li class="list-group-item">${p}</li>`)
+            .join("");
     }
 
     return{
