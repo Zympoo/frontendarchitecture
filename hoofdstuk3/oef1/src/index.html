@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Warre Neirinck" name="author">
+    <title>p55</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+<div class="container my-4">
+    <div class="card shadow-sm border-primary">
+        <div class="card-header bg-primary text-white">
+            Oefening 1 – AudioSettingsSingleton
+        </div>
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <h6>Volume wijzigen</h6>
+                    <input type="range" id="aud_volume" min="0" max="100" value="50"
+                           class="form-range">
+                    <button id="aud_btn_mute" class="btn btn-primary w-100 mt-2">
+                        Mute / Unmute
+                    </button>
+                </div>
+                <div class="col-md-6">
+                    <h6>Huidige instellingen</h6>
+                    <p>Volume: <strong><span id="aud_out_volume">-</span></strong></p>
+                    <p>Muted: <strong><span id="aud_out_muted">-</span></strong></p>
+                    <button id="aud_btn_show" class="btn btn-outline-primary w-100">
+                        Toon audio-instellingen
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
