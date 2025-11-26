@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Warre Neirinck" name="author">
+    <title>p55</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="core/main.js" type="module"></script>
+</head>
+<body>
+
+<div class="container my-4">
+    <div class="card shadow-sm mb-3">
+        <div class="card-header bg-dark text-white">
+            Modulaire Shop-app – Feature-based structuur
+        </div>
+        <div class="card-body">
+            <p class="mb-0">
+                Dit is de hoofdpagina van onze mini-app. Hieronder zie je de
+                <strong>Producten-feature</strong> en de <strong>Cart-feature</strong>.
+            </p>
+        </div>
+    </div>
+
+    <!-- Producten feature -->
+    <div class="card shadow-sm mb-3">
+        <div class="card-header bg-primary text-white">
+            Producten
+        </div>
+        <div class="card-body">
+            <div class="row g-3" id="feat_products_container">
+                <!-- Productkaarten worden via JS ingevuld -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart feature -->
+    <div class="card shadow-sm">
+        <div class="card-header bg-success text-white d-flex justify-content-between">
+            Cart
+            <span>
+        Items:
+        <span class="badge bg-light text-dark" id="feat_cart_badge">0</span>
+      </span>
+        </div>
+        <div class="card-body">
+            <ul class="list-group mb-3" id="feat_cart_list"></ul>
+            <div class="alert alert-secondary mb-0" id="feat_cart_total">
+                Totaal: €0.00
+            </div>
+        </div>
+    </div>
+    <div class="card shadow-sm mt-3">
+        <div class="card-header bg-warning d-flex justify-content-between">
+            Wishlist
+            <span>Items:<span class="badge bg-dark" id="feat_wishlist_badge">0</span></span>
+        </div>
+        <div class="card-body">
+            <ul class="list-group" id="feat_wishlist_list"></ul>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

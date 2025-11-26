@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Warre Neirinck" name="author">
+    <title>p55</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="core/main.js" type="module"></script>
+</head>
+<body>
+
+<div class="container my-4">
+    <div class="card shadow-sm border-info">
+        <div class="card-header bg-info text-white">
+            Oefening 2 – UserProfile-feature
+        </div>
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-5">
+                    <label for="feat_user_name" class="form-label">Naam</label>
+                    <input id="feat_user_name" class="form-control" placeholder="Je naam">
+                </div>
+                <div class="col-md-5">
+                    <label for="feat_user_email" class="form-label">E-mail</label>
+                    <input id="feat_user_email" class="form-control" placeholder="Je email">
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <button id="feat_user_save" class="btn btn-info w-100">
+                        Bewaar
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <h6>Actieve gebruiker</h6>
+            <p class="mb-1">Naam: <strong><span id="feat_user_out_name">-</span></strong></p>
+            <p class="mb-0">E-mail: <strong><span id="feat_user_out_email">-</span></strong></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
