@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Warre Neirinck" name="author">
+    <title>p55</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+<div class="container my-4">
+    <div class="card shadow-sm border-info">
+        <div class="card-header bg-info text-white">
+            Oefening 1 – ALERT via EventBus
+        </div>
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <h6>Publisher</h6>
+                    <div class="mb-3">
+                        <label for="ex1_alert_msg" class="form-label">Alert
+                            bericht</label>
+                        <input id="ex1_alert_msg" class="form-control" placeholder="Typ iets">
+                    </div>
+                    <button id="ex1_btn_send" class="btn btn-info w-100">
+                        Publish ALERT
+                    </button>
+                </div>
+                <div class="col-md-6">
+                    <h6>Observer</h6>
+                    <ul id="ex1_alert_list" class="list-group small"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

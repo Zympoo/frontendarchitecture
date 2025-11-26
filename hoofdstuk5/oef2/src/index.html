@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Warre Neirinck" name="author">
+    <title>p55</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+<div class="container my-4">
+    <div class="card shadow-sm border-success">
+        <div class="card-header bg-success text-white">
+            Oefening 2 – Producten-app met Service & UI (SoC)
+        </div>
+        <div class="card-body">
+            <div class="row g-3 align-items-end">
+                <div class="col-md-5">
+                    <label for="ex2_product_name" class="formlabel">Productnaam</label>
+                    <input id="ex2_product_name" class="form-control"
+                           placeholder="Bijv. Laptop">
+                </div>
+                <div class="col-md-3">
+                    <label for="ex2_product_price" class="form-label">Prijs (€)</label>
+                    <input id="ex2_product_price" type="number" class="form-control"
+                           placeholder="Bijv. 999">
+                </div>
+                <div class="col-md-4">
+                    <button id="ex2_btn_add" class="btn btn-success w-100">
+                        Voeg product toe
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <ul id="ex2_product_list" class="list-group mb-3"></ul>
+            <div id="ex2_total" class="alert alert-secondary mb-0">
+                Totaal: €0.00
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
